@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Up3.DefaultNuget\Up3.DefaultNuget.csproj" />
+      <ProjectReference Include="..\Up3.Kernel\Up3.Kernel.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BigMachines" Version="0.41.1" />
+      <PackageReference Include="SharpZipLib" Version="1.4.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Minio">
+        <HintPath>..\..\..\.nuget\packages\minio\6.0.4\lib\net8.0\Minio.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
