@@ -3,7 +3,7 @@ using Up3.Kernel.Adapter.Class;
 using Up3.Service.Upload.Adapter;
 using Up3.Service.Upload.Domain.Class;
 
-namespace Microsoft.Extensions.DependencyInjection.Domain;
+namespace Up3.Service.Upload.Domain;
 
 public class UploadService: IUploadService {
     private SemaphoreSlim _semaphoreSlimSelf = new SemaphoreSlim(1, 1);

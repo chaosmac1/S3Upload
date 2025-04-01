@@ -1,11 +1,11 @@
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Domain;
 using Up3.Kernel.Adapter.Interface;
 using Up3.Service.Upload.Adapter;
+using Up3.Service.Upload.Domain;
 using Up3.Service.Upload.Domain.Class;
 using Up3.Service.Upload.Domain.Interface;
 
-namespace Microsoft.Extensions.DependencyInjection;
+namespace Up3.Service.Upload;
 
 public static class Register {
     public static IServiceCollection UseServiceUpload(this IServiceCollection serviceCollection) {
