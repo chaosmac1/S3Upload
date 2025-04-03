@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Up3.Terminal", "Up3.Termina
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Up3.Init", "Up3.Init\Up3.Init.csproj", "{216A541A-13EB-4B00-9A73-A16BF8EACE8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Up3.WebServer", "Up3.WebServer\Up3.WebServer.csproj", "{A46DFF74-FAD5-4C05-BB14-8266CE386EB6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{216A541A-13EB-4B00-9A73-A16BF8EACE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{216A541A-13EB-4B00-9A73-A16BF8EACE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{216A541A-13EB-4B00-9A73-A16BF8EACE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A46DFF74-FAD5-4C05-BB14-8266CE386EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A46DFF74-FAD5-4C05-BB14-8266CE386EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A46DFF74-FAD5-4C05-BB14-8266CE386EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A46DFF74-FAD5-4C05-BB14-8266CE386EB6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B307F14E-6CC3-4ECF-BDBC-DCB3A72447A5} = {B0892AD0-F5DE-44C0-B3BB-F4D851EED2D5}

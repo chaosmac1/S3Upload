@@ -1,0 +1,14 @@
+<button onclick="() => { this.ButtonOnClick(); }" ></button>
+
+@code {
+    [Parameter] public required bool IsActive { get; set; }
+    [Parameter] public required Action<SaveButton> OnClick { get; set; }
+    [Parameter] public required string Text { get; set; }
+    
+    private void ButtonOnClick() {
+        if (!IsActive) {
+            return;
+        }
+        this.OnClick(this);
+    }
+}

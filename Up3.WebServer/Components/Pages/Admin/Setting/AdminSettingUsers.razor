@@ -1,0 +1,22 @@
+@page "/Admin/Setting/Users"
+@using BlazorApp1.Components.Private.Admin.Setting
+@using BlazorApp1.State;
+@using BlazorApp1.Components.Single
+@inject LoginState LoginState;
+@inject AdminPanelUsersState AdminPanelUsersState;
+
+<h3>AdminSettingUser</h3>
+
+@foreach (var user in AdminPanelUsersState.Value.New.Values.OrderBy(x => x.Username)) {
+    <UserRow UserId="user.Id"/>
+}
+
+<SaveButton IsActive="!AdminPanelUsersState.Value.IsNoChanges" OnClick="OnClickSaveChange"></SaveButton>
+
+@code {
+    protected void OnClickSaveChange(SaveButton button) {
+        Task.Run(async () => {
+            await AdminPanelUsersState.SaveChangesAsync(); 
+        });
+    }
+}
